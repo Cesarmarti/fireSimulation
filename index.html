@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <h1>Fire simulation <div class="tooltip">[?]
+            <span class="tooltiptext">Draw on canvas - left mouse -> button fire, middle -> wall. Use space to play/pause</span>
+          </div></h1> 
+        <div id="canv">
+    <canvas id="myCanvas" width="800" height="800"></canvas>
+</div>
+    <script src="logic.js"></script>
+    <style>
+         #canv {
+     width: 800px;
+     height:800px;
+     margin: 0px auto;
+   }
+   h1 {text-align: center;}
+
+   .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    }
+
+    .tooltip:hover .tooltiptext {
+    visibility: visible;
+    }
+    </style>
+    </body>
+
+</html>
