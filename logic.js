@@ -3,6 +3,7 @@ var data_next = []
 var DIM = 100;
 var objContext;
 var step;
+//komentar
 function init(){
     var objCanvas = document.getElementById("myCanvas");
     objContext = objCanvas.getContext("2d");
